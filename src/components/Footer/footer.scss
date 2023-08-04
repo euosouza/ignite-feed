@@ -1,0 +1,17 @@
+@import '../../assets//styles/common/utils.scss';
+
+.footer {
+  background-color: var(--gray-800);
+  text-align: center;
+  padding: toRem(4px);
+
+  p {
+    color: var(--white);
+    font-size: toRem(12px);
+
+    a {
+      color: var(--green-500);
+      text-decoration: none;
+    }
+  }
+}
