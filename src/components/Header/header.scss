@@ -1,0 +1,32 @@
+@import '../../assets//styles/common/utils.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: toRem(8px);
+
+  background-color: var(--gray-800);
+  padding: toRem(16px) 0;
+
+  @include responsiveMin($tablet) {
+    gap: toRem(16px);
+  }
+
+  .logo {
+    height: 40px;
+
+    @include responsiveMin($tablet) {
+      height: 48px;
+    }
+  }
+  .logo-text {
+    font-size: toRem(18px);
+    font-weight: bold;
+    color: var(--white);
+
+    @include responsiveMin($tablet) {
+      font-size: toRem(24px);
+    }
+  }
+}
