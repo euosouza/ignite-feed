@@ -2,15 +2,15 @@ import '@assets/styles/app.scss';
 
 import { Footer } from "@components/Footer"
 import { Header } from "@components/Header"
+import { Sidebar } from '@components/Sidebar';
 
 function App() {
   return (
     <>
       <Header />
       <main className="wrapper-main">
-        <aside>
-          <span>Sidebar</span>
-        </aside>
+        <Sidebar />
+
         <div className="list-posts">
           <span>Lista de posts</span>
         </div>
