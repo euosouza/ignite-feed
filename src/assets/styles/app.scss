@@ -9,11 +9,12 @@
   padding: toRem(16px);
 
   display: grid;
+  align-items: flex-start;
   grid-template-columns: 1fr;
   gap: toRem(32px);
 
   @include responsiveMin($tablet) {
-    padding: toRem(32px) 0;
+    padding: toRem(32px) toRem(16px);
     grid-template-columns: 300px 1fr;
   }
 }

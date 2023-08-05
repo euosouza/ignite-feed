@@ -1,0 +1,80 @@
+@import '../../assets/styles/common/utils.scss';
+
+.card-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: toRem(16px);
+
+  .wrapper-comment{
+    width: 100%;
+
+    .content-comment {
+      background-color: var(--gray-700);
+      padding: toRem(16px);
+      border-radius: 8px;
+      margin-bottom: toRem(16px);
+
+      .header-comment {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: toRem(16px);
+
+        .author-info {
+          .name {
+            line-height: 1.6;
+            font-size: toRem(14px);
+            font-weight: bold;
+
+            span {
+              color: var(--gray-400);
+            }
+          }
+
+          .date-publication {
+            line-height: 1.6;
+            font-size: toRem(12px);
+            color: var(--gray-400);
+          }
+        }
+
+        .btn-delete {
+          background-color: transparent;
+          border: none;
+          color: var(--gray-400);
+          font-size: toRem(14px);
+          transition: color 0.3s;
+          cursor: pointer;
+    
+          &:hover {
+            color: var(--red-500);
+          }
+        }
+      }
+    
+      .comment {
+        p {
+          font-size: toRem(14px);
+          color: var(--gray-100);
+        }
+      }
+    }
+  }
+
+  .wrapper-likes {
+    button {
+      display: flex;
+      align-items: center;
+      gap: toRem(8px);
+      background-color: transparent;
+      border: none;
+      color: var(--gray-400);
+      font-size: toRem(14px);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--green-500);
+      }
+    }
+  }
+}
