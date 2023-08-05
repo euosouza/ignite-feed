@@ -1,0 +1,19 @@
+@import './common/utils.scss';
+
+.wrapper-main {
+  color: var(--white);
+  
+  width: 100%;
+  max-width: $container;
+  margin: 0 auto;
+  padding: toRem(16px);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: toRem(32px);
+
+  @include responsiveMin($tablet) {
+    padding: toRem(32px) 0;
+    grid-template-columns: 300px 1fr;
+  }
+}
