@@ -93,10 +93,10 @@
       display: grid;
       gap: toRem(16px);
 
-      &:focus-within .wrapper-button {
-        visibility: visible;
-        max-height: none;
-      }
+      // &:focus-within .wrapper-button {
+      //   visibility: visible;
+      //   max-height: none;
+      // }
 
       textarea {
         padding: toRem(16px);
@@ -109,9 +109,6 @@
       }
 
       .wrapper-button {
-        visibility: hidden;
-        max-height: 0;
-
         button[type=submit] {
           background-color: var(--green-500);
           color: var(--white);
